@@ -1,22 +1,53 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import Header from '../components/header.js'
+import BackgroundImage from 'gatsby-background-image'
+import '../styles/global.css'
+import Button from 'react-bootstrap/Button'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+
+const IndexPage = (props) => (
+  <div >
+    <BackgroundImage
+      className="backgroundImage"
+      fluid={props.data.background.childImageSharp.fluid}
+    >
+      <div className="bg-image">
+      <Header/>
+      <div className="main-content wrapper">
+        <h5>Hi, I'm Lennart<span class="wave">👋🏻</span></h5>
+        <h1><span>App</span> and <span>Front-End</span> Developer</h1>
+    <div className="buttons">
+    <Button variant="black" className="projects-btn button" size="lg">
+      Projekte
+    </Button>{' '}
+    <Button variant="dark" size="lg" className="contact-btn button">
+      Kontakt
+    </Button>
+      </div>
+      </div>
+      </div>
+    </BackgroundImage>
+
+  </div>
+
+
 )
 
+
+
+
 export default IndexPage
+
+export const pageQuery = graphql`
+    query {
+      background: file(relativePath: { eq: "background.png" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `

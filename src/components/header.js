@@ -1,42 +1,53 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Navbar, Nav } from "react-bootstrap"
+import { Link } from "gatsby"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../styles/global.css"
+import "../styles/header.css"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+
+
+
+export default function Header() {
+    return (
+            
+            <div className="sticky-top Navbar">
+                
+
+
+                <Navbar expand="md" variant="dark" className="Nav" >
+                    <Navbar.Brand href="/" className=""><div className="brand"></div></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="navbarReponsive" />
+                    <Navbar.Collapse id="navbarReponsive">
+                        <Nav className="ml-auto navbar" as="ul">
+                            <Nav.Item as="li" >
+                                <Link className="nav-link" activeClassName="active" to="#Home">Home</Link>
+                            </Nav.Item>
+
+                            <Nav.Item as="li" >
+                                <Link className="nav-link" activeClassName="active" to="/projects">Projekte</Link>
+                            </Nav.Item>
+
+
+                            <Nav.Item as="li" >
+                                <Link className="nav-link" activeClassName="active" to="/contact">Kontakt</Link>
+                            </Nav.Item>
+                        </Nav>
+
+
+
+                    </Navbar.Collapse>
+
+                </Navbar>
+
+
+
+            </div>
+
+
+
+
+
+    )
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

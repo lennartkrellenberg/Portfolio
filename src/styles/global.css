@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    
+    }
+
+
+.wrapper {
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
+
+.bg-image {
+    height: 100vh;
+}
+
+.main-content {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    height: 80vh;
+    width: 100%;
+
+}
+
+.main-content h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 40px;
+
+}
+
+.main-content h5 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: medium;
+    font-size: 25px;
+
+}
+
+span {
+    color: #F7EA4F;
+}
+
+
+.projects-btn {
+    background: #F7EA4F;
+    color: black;
+    border-color: #F7EA4F;
+    width: 250px;
+    margin-bottom: 0px !important;
+    margin-right: 20px;
+
+}
+
+.contact-btn {
+    width: 250px;
+}
+
+.projects-btn:hover {
+    background-color: #b6aa2d;
+    border-color: #b6aa2d;
+
+    
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  @media screen and (max-width: 1024px) {
+ }
+      
+
+
+
+  @media screen and (max-width: 992px) {
+    html {
+      font-size: 80%;
+                      } 
+                                }
+    
+    /* On screens that are 600px or less, set the background color to olive */
+    @media screen and (max-width: 600px) {
+      html {
+        font-size: 70%;
+                    }
+
+    
+
+      .main-content {
+          text-align: center;
+          margin: 0 auto;
+      }
+
+      .main-content h1 {
+        font-size: 20px;
+    }
+
+   
+                              }
+  
+    @media only screen and (max-width: 505px) {
+       
+  
+        .projects-btn {
+            margin-right: 0px;
+            
+        }
+  
+        .contact-btn {
+            margin-top: 10px;
+        }
+    
+        .footer {
+          font-size: 85%;
+                      }
+     
+  
+     
+                    }
