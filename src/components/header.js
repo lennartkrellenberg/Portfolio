@@ -12,7 +12,7 @@ import "../styles/header.css"
 export default function Header() {
     return (
             
-            <div className="sticky-top Navbar">
+            <div className="top Navbar">
                 
 
 

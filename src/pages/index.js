@@ -30,6 +30,52 @@ const IndexPage = (props) => (
       </div>
     </BackgroundImage>
 
+    <div className="projects-section">
+      <div className="projects-content wrapper">
+        <h1>Projekte</h1>
+        <div className="projects-gallery">
+          <div className="project">
+            <h3>Name</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
+          </div>
+
+          <div className="project">
+            <h3>Name</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
+          </div>
+
+          <div className="project">
+            <h3>Name</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
+          </div>
+
+          <div className="project">
+            <h3>Name</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
+          </div>
+
+          <div className="project">
+            <h3>Name</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
+          </div>
+
+          <div className="project">
+            <h3>Name</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
+          </div>
+
+         
+        </div>
+        
+      </div>
+    </div>
+
   </div>
 
 
