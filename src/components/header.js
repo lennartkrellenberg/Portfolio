@@ -26,12 +26,12 @@ export default function Header() {
                             </Nav.Item>
 
                             <Nav.Item as="li" >
-                                <Link className="nav-link" activeClassName="active" to="/projects">Projekte</Link>
+                                <Link className="nav-link" activeClassName="active" to="#projects-section">Projekte</Link>
                             </Nav.Item>
 
 
                             <Nav.Item as="li" >
-                                <Link className="nav-link" activeClassName="active" to="/contact">Kontakt</Link>
+                                <Link className="nav-link" activeClassName="active" to="#contact-section">Kontakt</Link>
                             </Nav.Item>
                         </Nav>
 

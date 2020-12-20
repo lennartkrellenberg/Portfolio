@@ -19,10 +19,10 @@ const IndexPage = (props) => (
         <h5>Hi, I'm Lennart<span class="wave">👋🏻</span></h5>
         <h1><span>App</span> and <span>Front-End</span> Developer</h1>
     <div className="buttons">
-    <Button variant="black" className="projects-btn button" size="lg">
+    <Button variant="black" className="projects-btn button" size="lg" href="#projects-section">
       Projekte
-    </Button>{' '}
-    <Button variant="dark" size="lg" className="contact-btn button">
+    </Button>
+    <Button variant="dark" size="lg" className="contact-btn button" href="#contact-section">
       Kontakt
     </Button>
       </div>
@@ -30,7 +30,7 @@ const IndexPage = (props) => (
       </div>
     </BackgroundImage>
 
-    <div className="projects-section">
+    <div className="projects-section wrapper" id="projects-section">
       <div className="projects-content wrapper">
         <h1>Projekte</h1>
         <div className="projects-gallery">
@@ -76,6 +76,17 @@ const IndexPage = (props) => (
       </div>
     </div>
 
+    <div className="contact-section" id="contact-section">
+      <h1 className="wrapper">Get in Touch</h1>
+
+      <div className="contact-content wrapper">
+        <p>If you’d like to get in touch, you can send me an email directly at<br/><span><a className="social-link" href="mailto:lennart@lennartkrellenberg.com">lennart@lennartkrellenberg.com</a></span> or contact me on <span><a className="social-link" href="https:/www.linkedin.com/in/lennartkrellenberg
+">LinkedIn</a></span> or <span><a href="https://www.instagram.com/lennartkrellenberg/" className="social-link">Instagram</a></span></p>
+        <Button variant="light" size="lg" className="email-btn button" href="mailto:lennart@lennartkrellenberg.com">
+      Contact Me
+    </Button>
+      </div>
+    </div>
   </div>
 
 
