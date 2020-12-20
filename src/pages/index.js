@@ -14,19 +14,19 @@ const IndexPage = (props) => (
       fluid={props.data.background.childImageSharp.fluid}
     >
       <div className="bg-image">
-      <Header/>
-      <div className="main-content wrapper">
-        <h5>Hi, I'm Lennart<span class="wave">👋🏻</span></h5>
-        <h1><span>App</span> and <span>Front-End</span> Developer</h1>
-    <div className="buttons">
-    <Button variant="black" className="projects-btn button" size="lg" href="#projects-section">
-      Projekte
+        <Header />
+        <div className="main-content wrapper">
+          <h5>Hi, I'm Lennart<span class="wave">👋🏻</span></h5>
+          <h1><span>App</span> and <span>Front-End</span> Developer</h1>
+          <div className="buttons">
+            <Button variant="black" className="projects-btn button" size="lg" href="#projects-section">
+              Projekte
     </Button>
-    <Button variant="dark" size="lg" className="contact-btn button" href="#contact-section">
-      Kontakt
+            <Button variant="dark" size="lg" className="contact-btn button" href="#contact-section">
+              Kontakt
     </Button>
-      </div>
-      </div>
+          </div>
+        </div>
       </div>
     </BackgroundImage>
 
@@ -70,9 +70,10 @@ const IndexPage = (props) => (
             <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
           </div>
 
-         
+
+
         </div>
-        
+
       </div>
     </div>
 
@@ -80,10 +81,10 @@ const IndexPage = (props) => (
       <h1 className="wrapper">Get in Touch</h1>
 
       <div className="contact-content wrapper">
-        <p>If you’d like to get in touch, you can send me an email directly at<br/><span><a className="social-link" href="mailto:lennart@lennartkrellenberg.com">lennart@lennartkrellenberg.com</a></span> or contact me on <span><a className="social-link" href="https:/www.linkedin.com/in/lennartkrellenberg
+        <p>If you’d like to get in touch, you can send me an email directly at<br /><span><a className="social-link" href="mailto:lennart@lennartkrellenberg.com">lennart@lennartkrellenberg.com</a></span> or contact me on <span><a className="social-link" href="https:/www.linkedin.com/in/lennartkrellenberg
 ">LinkedIn</a></span> or <span><a href="https://www.instagram.com/lennartkrellenberg/" className="social-link">Instagram</a></span></p>
         <Button variant="light" size="lg" className="email-btn button" href="mailto:lennart@lennartkrellenberg.com">
-      Contact Me
+          Contact Me
     </Button>
       </div>
     </div>
