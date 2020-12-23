@@ -31,7 +31,7 @@ const IndexPage = (props) => (
       </div>
     </BackgroundImage>
 
-    <div className="projects-section wrapper" id="projects-section">
+    <div className="projects-section " id="projects-section">
       <div className="projects-content wrapper">
         <h1>Projekte</h1>
         <div className="projects-gallery">
@@ -61,8 +61,8 @@ const IndexPage = (props) => (
 
           <div className="project">
             <h3>MovieApp</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
+            <p>This app shows you upcoming movies, trending movies and trending series. The app gets the data from the Movie Database.</p>
+            <Button variant="dark" size="lg" className="project-btn button" href="https://github.com/lennartkrellenberg/MovieApp">Mehr dazu</Button>
           </div>
 
           <div className="project">
