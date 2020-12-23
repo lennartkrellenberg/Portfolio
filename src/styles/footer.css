@@ -1,0 +1,47 @@
+.footer {
+  background-color: #121212;
+}
+
+.footer-content {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+
+.box h5 {
+  font-size: 24px;
+}
+
+.footer-link {
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #f7ea4f;
+}
+
+.footer-link:hover {
+  color: #b6aa2d;
+}
+
+li {
+  list-style: none;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 525px) {
+  .box {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .box3 {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .footer {
+    font-size: 85%;
+  }
+}

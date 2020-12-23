@@ -1,31 +1,30 @@
-
 .Navbar {
-  margin: 0 40px;
   padding-top: 10px;
 }
 
-
-
-
 .brand {
-    background-image: url("../images/logo-white.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 40px;
-    width: 40px;
+  background-image: url("../images/logo-white.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+}
+
+.brand:hover {
+  color: #f7ea4f;
+}
+
+nav .navbar-nav li a {
+  color: white !important;
+}
+
+nav .navbar-nav li a:hover {
+  color: #f7ea4f !important;
+}
+
+@media only screen and (max-width: 750px) {
+  .Navbar {
+    margin: 0‚;
   }
-
-  .brand:hover {
-   color: #F7EA4F;
-  }
-   
-  nav .navbar-nav li a{
-    color: white !important;
-    }
-
-    nav .navbar-nav li a:hover {
-      color: #F7EA4F !important;
-    }
-
-   
+}

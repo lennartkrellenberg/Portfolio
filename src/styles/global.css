@@ -1,365 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@300;400;500&display=swap");
+@import "hero-section.css";
+@import "projects-section.css";
+@import "contact-section.css";
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .button {
-    border-radius: 0.5rem;
-}
-
-.bg-image {
-    height: 100vh;
-}
-
-.main-content {
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    height: 80vh;
-    width: 100%;
-}
-
-.main-content h1 {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: bold;
-    color: #FFFFFF;
-    font-size: 40px;
-}
-
-.main-content h5 {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: medium;
-    font-size: 25px;
+  border-radius: 0.5rem;
 }
 
 span {
-    color: #F7EA4F;
-}
-
-.projects-btn {
-    background: #F7EA4F;
-    color: black;
-    border-color: #F7EA4F;
-    width: 250px;
-    margin-bottom: 0px !important;
-    margin-right: 20px;
-}
-
-.contact-btn {
-    width: 250px;
-}
-
-.projects-btn:hover {
-    background-color: #b6aa2d;
-    border-color: #b6aa2d;
-}
-
-.buttons {
-    margin-top: 15px;
-}
-
-.wave {
-    animation-name: wave-animation;
-    /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;
-    /* Change to speed up or slow down */
-    animation-iteration-count: infinite;
-    /* Never stop waving :) */
-    transform-origin: 70% 70%;
-    /* Pivot around the bottom-left palm */
-    display: inline-block;
-    margin-left: 5px;
-}
-
-.projects-section {
-    max-width: 100vw;
-    min-height: 100vh;
-    background-color: #121212;
-    color: #FFFFFF;
-}
-
-.projects-section h1 {
-    padding-top: 40px;
-    color: #707070;
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-}
-
-.projects-gallery {
-    margin-top: 10px;
-    padding: 30px 0;
-    width: 100%;
-    display: grid;
-    grid-gap: 6rem;
-    grid-template-columns: repeat(auto-fit, 21rem);
-    justify-content: center;
-}
-
-.project {
-    background-color: #121212;
-    padding: 25px;
-    padding-top: 30px;
-    border-radius: 15px;
-    border: 2px solid #4e4848;
-    height: 20rem;
-    width: 20rem;
-    overflow: hidden;
-    position: relative;
-}
-
-.project button {
-    background-color: #161616;
-}
-
-.project h3 {
-    margin-bottom: 20px;
-}
-
-.project p {
-    margin-top: 15px;
-}
-
-.project-btn {
-    margin-top: 60px;
-    width: 100%;
-}
-
-.contact-section {
-    background-color: #121212;
-    height: 100vh;
-}
-
-.contact-section h1 {
-    padding-top: 40px;
-    color: #707070;
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-}
-
-.contact-content {
-    display: flex;
-    height: 80vh;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-
-.contact-content p {
-    font-weight: medium;
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-}
-
-.social-link {
-    text-align: left;
-    text-decoration: underline;
-    font: normal normal medium 30px/39px Roboto;
-    letter-spacing: 0px;
-    color: #F7EA4F;
-    text-decoration: underline;
-}
-
-.social-link:hover {
-    color: #b6aa2d;
-}
-
-.email-btn {
-    background-color: #F7EA4F;
-    border-color: #121212;
-    color: #121212;
-    width: 240px;
-    height: 50px;
-    margin-top: 40px;
-}
-
-.email-btn:hover {
-    background-color: #b6aa2d;
-    border-color: #b6aa2d;
-}
-
-@keyframes wave-animation {
-    0% {
-        transform: rotate( 0.0deg)
-    }
-    10% {
-        transform: rotate(14.0deg)
-    }
-    /* The following five values can be played with to make the waving more or less extreme */
-    20% {
-        transform: rotate(-8.0deg)
-    }
-    30% {
-        transform: rotate(14.0deg)
-    }
-    40% {
-        transform: rotate(-4.0deg)
-    }
-    50% {
-        transform: rotate(10.0deg)
-    }
-    60% {
-        transform: rotate( 0.0deg)
-    }
-    /* Reset for the last half to pause */
-    100% {
-        transform: rotate( 0.0deg)
-    }
+  color: #f7ea4f;
 }
 
 @media screen and (max-width: 1024px) {
-    html {
-        font-size: 80%;
-    }
-    html {
-        font-size: 80%;
-    }
-    .main-content {
-        margin-left: 40px;
-    }
-    .projects-section h1 {
-        margin-left: 30px;
-    }
-    .project-btn {
-        margin-top: 25px;
-    }
-    .contact-section h1 {
-        margin-left: 30px;
-    }
-    .contact-content {
-        margin-left: 30px;
-    }
-    .email-btn {
-        height: fit-content;
-        font-size: 20px;
-    }
+  html {
+    font-size: 80%;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    html {
-        font-size: 80%;
-    }
-    .main-content {
-        margin-left: 40px;
-    }
-    .projects-section h1 {
-        margin-left: 30px;
-    }
-    .project-btn {
-        margin-top: 25px;
-    }
-    .contact-section h1 {
-        margin-left: 30px;
-    }
-    .contact-content {
-        margin-left: 30px;
-    }
-    .email-btn {
-        height: fit-content;
-        font-size: 20px;
-    }
+  html {
+    font-size: 80%;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    html {
-        font-size: 70%;
-    }
-    .main-content {
-        text-align: center;
-        margin: 0 auto;
-    }
-    .main-content h1 {
-        font-size: 20px;
-    }
-    .projects-section h1 {
-        margin-left: 30px;
-    }
-    .project-btn {
-        margin-top: 25px;
-    }
-    .contact-section h1 {
-        margin-left: 30px;
-    }
-    .contact-content {
-        text-align: center;
-        margin-left: 30px;
-    }
-    .contact-content p {
-        width: 85vw;
-        font-size: 18px;
-        text-align: left;
-    }
-    .email-btn {
-        width: 225px;
-        height: fit-content;
-        margin-top: 20px;
-    }
-}
-
-@media only screen and (max-width: 525px) {
-    .projects-btn {
-        margin-right: 0px;
-    }
-    .contact-btn {
-        margin-top: 10px;
-    }
-    .footer {
-        font-size: 85%;
-    }
-    .projects-gallery {
-        padding: 30px 0;
-        width: 100%;
-        display: grid;
-        grid-gap: 6rem;
-        grid-template-columns: repeat(auto-fit, 90vw);
-        justify-content: center;
-        padding: 0;
-        margin-top: 20px;
-    }
-    .project {
-        background-color: #121212;
-        padding: 25px;
-        padding-top: 30px;
-        border-radius: 15px;
-        border: 2px solid #4e4848;
-        height: 20rem;
-        width: 90vw;
-        overflow: hidden;
-        position: relative;
-    }
-    .project-btn {
-        margin-top: 30px;
-        width: 100%;
-    }
-    .contact-section h1 {
-        margin-left: 30px;
-    }
-    .contact-content {
-        text-align: center;
-        margin-left: 30px;
-    }
-    .contact-content p {
-        width: 85vw;
-        font-size: 18px;
-        text-align: left;
-    }
-    .email-btn {
-        width: 200px;
-        height: fit-content;
-        margin-top: 20px;
-    }
+  html {
+    font-size: 70%;
+  }
 }

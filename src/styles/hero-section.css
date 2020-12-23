@@ -1,0 +1,117 @@
+.bg-image {
+  height: 100vh;
+}
+
+.main-content {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 80vh;
+}
+
+.main-content h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.main-content h5 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: medium;
+  font-size: 25px;
+}
+
+.projects-btn {
+  background: #f7ea4f;
+  color: black;
+  border-color: #f7ea4f;
+  width: 250px;
+  margin-bottom: 0px !important;
+  margin-right: 20px;
+}
+
+.contact-btn {
+  width: 250px;
+}
+
+.projects-btn:hover {
+  background-color: #b6aa2d;
+  border-color: #b6aa2d;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-content {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main-content h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .main-content h5 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .projects-btn {
+    margin-right: 0px;
+  }
+  .contact-btn {
+    margin-top: 10px;
+  }
+}

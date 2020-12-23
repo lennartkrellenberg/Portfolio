@@ -1,0 +1,125 @@
+.contact-section {
+  background-color: #121212;
+  height: 100vh;
+}
+
+.contact-section h1 {
+  padding-top: 40px;
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+.contact-content {
+  display: flex;
+  height: 80vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-content p {
+  font-weight: medium;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+
+.social-link {
+  text-align: left;
+  text-decoration: underline;
+  font: normal normal medium 30px/39px Roboto;
+  letter-spacing: 0px;
+  color: #f7ea4f;
+  text-decoration: underline;
+}
+
+.social-link:hover {
+  color: #b6aa2d;
+}
+
+.email-btn {
+  background-color: #f7ea4f;
+  border-color: #121212;
+  color: #121212;
+  width: 240px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.email-btn:hover {
+  background-color: #b6aa2d;
+  border-color: #b6aa2d;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-section h1 {
+    margin-left: 30px;
+  }
+  .contact-content {
+    margin-left: 30px;
+    width: 92vw;
+  }
+  .email-btn {
+    height: fit-content;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact-section h1 {
+    margin-left: 30px;
+  }
+  .contact-content {
+    margin-left: 30px;
+  }
+  .email-btn {
+    height: fit-content;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-section h1 {
+    margin-left: 30px;
+  }
+  .contact-content {
+    text-align: center;
+    margin-left: 30px;
+  }
+  .contact-content p {
+    width: 100vw;
+    font-size: 18px;
+    text-align: left;
+  }
+  .email-btn {
+    width: 225px;
+    height: fit-content;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .contact-section {
+    height: 60vh;
+  }
+  .contact-section h1 {
+    margin-left: 30px;
+  }
+  .contact-content {
+    text-align: center;
+    margin-left: 30px;
+    height: 50vh;
+  }
+  .contact-content p {
+    width: 85vw;
+    font-size: 18px;
+    text-align: left;
+  }
+  .email-btn {
+    width: 200px;
+    height: fit-content;
+    margin-top: 20px;
+  }
+}

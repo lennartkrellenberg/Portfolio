@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Header from '../components/header.js'
+import Footer from '../components/footer.js'
 import BackgroundImage from 'gatsby-background-image'
 import '../styles/global.css'
 import Button from 'react-bootstrap/Button'
@@ -8,7 +9,7 @@ import Button from 'react-bootstrap/Button'
 
 
 const IndexPage = (props) => (
-  <div >
+  <div>
     <BackgroundImage
       className="backgroundImage"
       fluid={props.data.background.childImageSharp.fluid}
@@ -35,39 +36,39 @@ const IndexPage = (props) => (
         <h1>Projekte</h1>
         <div className="projects-gallery">
           <div className="project">
-            <h3>Name</h3>
+            <h3>Leon Carstens</h3>
+            <p>A Gatsby website for the photographer Leon Carstens.</p>
+            <Button variant="dark" size="lg" className="project-btn button" href="https://www.leoncarstens.de">Live Page</Button>
+          </div>
+
+          <div className="project">
+            <h3>travler</h3>
+            <p>It's a flutter app that lets you find cities and rate them. You also have the possibility to look at them more closely</p>
+            <Button variant="dark" size="lg" className="project-btn button" href="https://github.com/lennartkrellenberg/travler">Mehr dazu</Button>
+          </div>
+
+          <div className="project">
+            <h3>Contact-Card</h3>
+            <p>This has been one of my first projects. It is a simple contact card with social media links.</p>
+            <Button variant="dark" size="lg" className="project-btn button" href="https://github.com/lennartkrellenberg/Contact-Card">Mehr dazu</Button>
+          </div>
+
+          <div className="project">
+            <h3>Drum Kit</h3>
+            <p>A simple Drum Kit that I built using the tutorial from Wesbos.</p>
+            <Button variant="dark" size="lg" className="project-btn button" href="https://github.com/lennartkrellenberg/drumkit">Mehr dazu</Button>
+          </div>
+
+          <div className="project">
+            <h3>MovieApp</h3>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
             <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
           </div>
 
           <div className="project">
-            <h3>Name</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
-          </div>
-
-          <div className="project">
-            <h3>Name</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
-          </div>
-
-          <div className="project">
-            <h3>Name</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
-          </div>
-
-          <div className="project">
-            <h3>Name</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
-          </div>
-
-          <div className="project">
-            <h3>Name</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-            <Button variant="dark" size="lg" className="project-btn button">Mehr dazu</Button>
+            <h3>All Projects</h3>
+            <p>To see more projects from me, you can go to my GitHub account</p>
+            <Button variant="dark" size="lg" className="project-btn button" href="https://github.com/lennartkrellenberg">GitHub</Button>
           </div>
 
 
@@ -88,6 +89,8 @@ const IndexPage = (props) => (
     </Button>
       </div>
     </div>
+
+    <Footer />
   </div>
 
 
@@ -102,7 +105,7 @@ export const pageQuery = graphql`
     query {
       background: file(relativePath: { eq: "background.png" }) {
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(quality: 80) {
             ...GatsbyImageSharpFluid
           }
         }
