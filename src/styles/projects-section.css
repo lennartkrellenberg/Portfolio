@@ -32,6 +32,11 @@
   width: 20rem;
   overflow: hidden;
   position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.1);
 }
 
 .project button {

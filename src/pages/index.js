@@ -37,38 +37,38 @@ const IndexPage = (props) => (
         <div className="projects-gallery">
           <div className="project">
             <h3>Leon Carstens</h3>
-            <p>A Gatsby website for the photographer Leon Carstens.</p>
-            <Button variant="dark" size="lg" className="project-btn button" href="https://www.leoncarstens.de">Live Page</Button>
+            <p>Das ist eine Website, die ich für den Fotograpfen Leon Carstens gemacht habe.</p>
+            <Button variant="dark" size="lg" className="project-btn button" rel="noopener noreferrer" target="_blank" href="https://www.leoncarstens.de">Live Page</Button>
           </div>
 
           <div className="project">
             <h3>travler</h3>
-            <p>It's a flutter app that lets you find cities and rate them. You also have the possibility to look at them more closely</p>
-            <Button variant="dark" size="lg" className="project-btn button" href="https://github.com/lennartkrellenberg/travler">Mehr dazu</Button>
+            <p>travler ist eine Flutter App, die einen verschiedene Städte zeigt. Das war meine erste Flutter App, die ich programmiert habe.</p>
+            <Button variant="dark" size="lg" className="project-btn button" rel="noopener noreferrer" target="_blank" href="https://github.com/lennartkrellenberg/travler">Zum Code</Button>
           </div>
 
           <div className="project">
             <h3>Contact-Card</h3>
-            <p>This has been one of my first projects. It is a simple contact card with social media links.</p>
-            <Button variant="dark" size="lg" className="project-btn button" href="https://github.com/lennartkrellenberg/Contact-Card">Mehr dazu</Button>
+            <p>Diese Visitenkarte habe ich 2018 gemacht. Es war eines meiner ersten Projekte in Richtung Webentwicklung.</p>
+            <Button variant="dark" size="lg" className="project-btn button" rel="noopener noreferrer" target="_blank" href="https://github.com/lennartkrellenberg/Contact-Card">Mehr dazu</Button>
           </div>
 
           <div className="project">
-            <h3>Drum Kit</h3>
-            <p>A simple Drum Kit that I built using the tutorial from Wesbos.</p>
-            <Button variant="dark" size="lg" className="project-btn button" href="https://github.com/lennartkrellenberg/drumkit">Mehr dazu</Button>
+            <h3>Leon Carstens (alt)</h3>
+            <p>Dies ist die alte Seite des Fotografen Leon Carstens. Ich habe sie im August 2020 entwickelt.</p>
+            <Button variant="dark" size="lg" className="project-btn button" rel="noopener noreferrer" target="_blank" href="https://github.com/lennartkrellenberg/leoncarstens-old">Mehr dazu</Button>
           </div>
 
           <div className="project">
             <h3>MovieApp</h3>
-            <p>This app shows you upcoming movies, trending movies and trending series. The app gets the data from the Movie Database.</p>
-            <Button variant="dark" size="lg" className="project-btn button" href="https://github.com/lennartkrellenberg/MovieApp">Mehr dazu</Button>
+            <p>In dieser App werden die aktuell beliebtesten Filme gezeigt. Die App bezieht die Daten aus der Movie Database API.</p>
+            <Button variant="dark" size="lg" className="project-btn button" rel="noopener noreferrer" target="_blank" href="https://github.com/lennartkrellenberg/MovieApp">Mehr dazu</Button>
           </div>
 
           <div className="project">
-            <h3>All Projects</h3>
-            <p>To see more projects from me, you can go to my GitHub account</p>
-            <Button variant="dark" size="lg" className="project-btn button" href="https://github.com/lennartkrellenberg">GitHub</Button>
+            <h3>Mehr Projekte</h3>
+            <p>Um noch mehr Projekte zu sehen, ist hier mein GitHub Account.</p>
+            <Button variant="dark" size="lg" className="project-btn button" rel="noopener noreferrer" target="_blank" href="https://github.com/lennartkrellenberg">GitHub</Button>
           </div>
 
 
@@ -82,10 +82,10 @@ const IndexPage = (props) => (
       <h1 className="wrapper">Get in Touch</h1>
 
       <div className="contact-content wrapper">
-        <p>If you’d like to get in touch, you can send me an email directly at<br /><span><a className="social-link" href="mailto:lennart@lennartkrellenberg.com">lennart@lennartkrellenberg.com</a></span> or contact me on <span><a className="social-link" href="https:/www.linkedin.com/in/lennartkrellenberg
-">LinkedIn</a></span> or <span><a href="https://www.instagram.com/lennartkrellenberg/" className="social-link">Instagram</a></span></p>
+        <p>Wenn Sie mit mir in Kontakt treten möchten, können Sie mir direkt eine E-Mail an<br /><span><a className="social-link" href="mailto:lennart@lennartkrellenberg.com">lennart@lennartkrellenberg.com senden</a></span> oder auf <span><a className="social-link" href="https:/www.linkedin.com/in/lennartkrellenberg
+">LinkedIn</a></span> oder <span><a href="https://www.instagram.com/lennartkrellenberg/" className="social-link">Instagram</a></span> anschreiben</p>
         <Button variant="light" size="lg" className="email-btn button" href="mailto:lennart@lennartkrellenberg.com">
-          Contact Me
+          Email
     </Button>
       </div>
     </div>
