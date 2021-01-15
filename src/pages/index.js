@@ -37,13 +37,13 @@ const IndexPage = (props) => (
         <div className="projects-gallery">
           <div className="project">
             <h3>Leon Carstens</h3>
-            <p>Das ist eine Website, die ich für den Fotograpfen Leon Carstens gemacht habe.</p>
+            <p>Das ist eine Website, die ich für den Fotografen Leon Carstens gemacht habe.</p>
             <Button variant="dark" size="lg" className="project-btn button" rel="noopener noreferrer" target="_blank" href="https://www.leoncarstens.de">Live Page</Button>
           </div>
 
           <div className="project">
             <h3>travler</h3>
-            <p>travler ist eine Flutter App, die einen verschiedene Städte zeigt. Das war meine erste Flutter App, die ich programmiert habe.</p>
+            <p>travler ist eine Flutter App, die einem verschiedene Städte zeigt. Das war meine erste Flutter App, die ich programmiert habe.</p>
             <Button variant="dark" size="lg" className="project-btn button" rel="noopener noreferrer" target="_blank" href="https://github.com/lennartkrellenberg/travler">Zum Code</Button>
           </div>
 
