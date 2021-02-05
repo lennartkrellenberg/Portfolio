@@ -5,11 +5,17 @@ import Footer from '../components/footer.js'
 import BackgroundImage from 'gatsby-background-image'
 import '../styles/global.css'
 import Button from 'react-bootstrap/Button'
+import { Helmet } from "react-helmet"
 
 
 
 const IndexPage = (props) => (
   <div>
+    <Helmet>
+      <title>Lennart Krellenberg</title>
+      <meta name="description" content="Self-taught front-end and app developer" />
+      <link rel="canonical" href="http://mysite.com/example" />
+    </Helmet>
     <BackgroundImage
       className="backgroundImage"
       fluid={props.data.background.childImageSharp.fluid}
