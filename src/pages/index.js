@@ -14,7 +14,6 @@ const IndexPage = (props) => (
     <Helmet>
       <title>Lennart Krellenberg</title>
       <meta name="description" content="Self-taught front-end and app developer" />
-      <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
     <BackgroundImage
       className="backgroundImage"

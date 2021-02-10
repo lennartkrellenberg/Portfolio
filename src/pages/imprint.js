@@ -4,9 +4,14 @@ import Footer from '../components/footer.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/global.css"
 import "../styles/imprint.css"
+import { Helmet } from "react-helmet"
+
 
 const ImprintPage = (props) => (
     <div className="imprint">
+        <Helmet>
+            <title>Imprint | Lennart Krellenberg</title>
+            <meta name="google-site-verification" content="5r2qqBQYIn7OwoZFJTgB2L6aUrft-9XO1lbQR9dsKgE" />    </Helmet>
         <Header />
         <div className="imprint-content wrapper">
             <h2 className="topic">Imprint</h2>
